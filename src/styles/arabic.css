@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Tahoma';
+	src: url("fonts/NotoIKEAArabicLatin-Bold.eot");
+	/* IE9 Compat Modes */
+	src: url("fonts/NotoIKEAArabicLatin-Bold.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("fonts/NotoIKEAArabicLatin-Bold.otf") format("opentype"),
+		/* Open Type Font */
+		url("fonts/NotoIKEAArabicLatin-Bold.svg") format("svg"),
+		/* Legacy iOS */
+		url("fonts/NotoIKEAArabicLatin-Bold.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url("fonts/NotoIKEAArabicLatin-Bold.woff") format("woff"),
+		/* Modern Browsers */
+		url("fonts/NotoIKEAArabicLatin-Bold.woff2") format("woff2");
+	/* Modern Browsers */
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url("fonts/NotoIKEAArabicLatin-Regular.eot");
+	/* IE9 Compat Modes */
+	src: url("fonts/NotoIKEAArabicLatin-Regular.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("fonts/NotoIKEAArabicLatin-Regular.otf") format("opentype"),
+		/* Open Type Font */
+		url("fonts/NotoIKEAArabicLatin-Regular.svg") format("svg"),
+		/* Legacy iOS */
+		url("fonts/NotoIKEAArabicLatin-Regular.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url("fonts/NotoIKEAArabicLatin-Regular.woff") format("woff"),
+		/* Modern Browsers */
+		url("fonts/NotoIKEAArabicLatin-Regular.woff2") format("woff2");
+	/* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}

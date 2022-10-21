@@ -1,0 +1,25 @@
+{
+  "Track your Order": "تتبع طلبك",
+  "Order Number": "رقم الطلب",
+  "Email or Phone number": "البريد الإلكتروني أو رقم الهاتف",
+  "9-10 Digits, No-Spaces": "9-10 أرقام ، بدون مسافات",
+  "The email or phone number used to place the order": "البريد الإلكتروني أو رقم الهاتف المستخدم لتقديم الطلب",
+  "Find an Order": "ابحث عن طلب",
+  "message-content": "نحن هنا لمساعدتك في كل خطوة على الطريق. ابق على اطلاع دائم بحالة طلبك وتتبعه أينما كان. كل ما عليك فعله هو إدخال رقم الطلب وعنوان البريد الإلكتروني للحصول على مزيد من التفاصيل.",
+  "ORDER NO": "رقم الطلب",
+  "Delivered On": "تم التسليم",
+  "Delivery Address": "عنوان التسليم",
+  "Customer Name": "اسم الزبون",
+  "Address": "العنوان",
+  "Contact": "اتصال",
+  "Order Details": "تفاصيل الطلب",
+  "Item Code": "رقم القطعة",
+  "Item Name": "اسم القطعة",
+  "Quantity": "الكمية",
+  "Price": "السعر",
+  "Click here to track another order": "اضغط هنا لتتبع طلب آخر",
+  "Order Number is required":"رقم الطلب مطلوب",
+  "Phone Number is required":"رقم الهاتف مطلوب",
+  "Order Confirmed":"تم تاكيد الطلب"
+
+}

@@ -1,36 +1,21 @@
-import React from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import * as counterActions from './actions';
+import React from "react";
+import "./styles/Common.scss";
+import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
+import OrderTracking from "./pages/Home/orderTracking";
+import TrackStatus from "./pages/Home/trackStatus";
 
-function App(props) {
-  const { CounterActions, number } = props;
+function App() {
   return (
     <div>
-      <h1>{number}</h1>
-      <button type="button" onClick={() => CounterActions.increment()}>
-        +
-      </button>
-      <button type="button" onClick={() => CounterActions.decrement()}>
-        -
-      </button>
+      <HashRouter basename="/">
+        <Routes>
+          <Route path="/" element={<Navigate to="orderTracking" replace />} />
+          <Route exact path="/orderTracking" element={<OrderTracking />} />
+          <Route exact path="/trackstatus" element={<TrackStatus />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
 
-App.propTypes = {
-  // props.counterActions.increment: PropTypes.number.isRequired,
-  // onTap: PropTypes.func.isRequired,
-  CounterActions: PropTypes.func.isRequired,
-  number: PropTypes.number.isRequired
-};
-
-export default connect(
-  (state) => ({
-    number: state.counter
-  }),
-  (dispatch) => ({
-    CounterActions: bindActionCreators(counterActions, dispatch)
-  })
-)(App);
+export default App;

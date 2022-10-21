@@ -1,0 +1,42 @@
+{
+    "status": true,
+    "message": "Success",
+    "data": {
+        "orderNumber": "ISO001665987",
+        "orderStatus": "Order is on its way",
+        "deliveryDate": "2022-10-17T00:00:00",
+        "customername": "Manal Al-HAsawi",
+        "deliveryAddress": "259, St 313, Block 3, Apartment flor 1 apt 4, SOUTH SURRA SEDIQ, HAWALLI, Kuwait",
+        "shipmentAddress": "259, St 313, Block 3, Apartment flor 1 apt 4, SOUTH SURRA SEDIQ, HAWALLI, Kuwait",
+        "customerMobile": "97882335",
+        "customerEmail": "secretlife@hotmail.com",
+        "expectedDeliveryDate": "October 17 2022",
+        "deliveryDateLabel": "Delivered On ",
+        "statusLabel": [
+            "Order Confirmed",
+            "Order is Prepared",
+            "Order is on its way",
+            "Order is Delivered"
+        ],
+        "lineitem": [
+            {
+                "item_code": "10487190",
+                "item_name": "MALM TV Bnch 160 x 48 white",
+                "quantity": "1",
+                "price": "55.000"
+            },
+            {
+                "item_code": "40337694",
+                "item_name": "BRIMNES TV BNCH 120x53 WHITE",
+                "quantity": "1",
+                "price": "27.500"
+            },
+            {
+                "item_code": "30196538",
+                "item_name": "BESTA TOP Panel 120x5 GLASS WHITE",
+                "quantity": "1",
+                "price": "8.000"
+            }
+        ]
+    }
+}

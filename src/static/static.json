@@ -3,7 +3,7 @@
     "message": "Success",
     "data": {
         "orderNumber": "ISO001665987",
-        "orderStatus": "Order is on its way",
+        "orderStatus": "Order is Prepared",
         "deliveryDate": "2022-10-17T00:00:00",
         "customername": "Manal Al-HAsawi",
         "deliveryAddress": "259, St 313, Block 3, Apartment flor 1 apt 4, SOUTH SURRA SEDIQ, HAWALLI, Kuwait",

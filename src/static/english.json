@@ -7,7 +7,7 @@
   "Find an Order": "Find an Order",
   "message-content": "We are here to help you every step of the way. Stay updated on the status of your order and track it wherever it is. All you need to do is enter your order number and email address to get more details.",
   "ORDER NO": "ORDER NO",
-  "Delivered On": "Delivered On",
+  "Delivered On ": "Delivered On",
   "Delivery Address": "Delivery Address",
   "Customer Name": "Customer Name",
   "Address": "Address",
@@ -18,7 +18,12 @@
   "Quantity": "Quantity",
   "Price": "Price",
   "Click here to track another order": "Click here to track another order",
-  "Order Number is required":"Order Number is required",
-  "Phone Number is required":"Phone Number is required",
-  "Order Confirmed":"Order Confirmed"
+  "Order Number is required": "Order Number is required",
+  "Phone Number is required": "Phone Number is required",
+  "Order Confirmed": "Order Confirmed",
+  "Order is Prepared": "Order is Prepared",
+  "Order is on its way": "Order is on its way",
+  "Order is Delivered": "Order is Delivered",
+  "Expected Arrival":"Expected Arrival"
+  
 }

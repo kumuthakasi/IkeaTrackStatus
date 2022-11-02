@@ -7,7 +7,7 @@
   "Find an Order": "ابحث عن طلب",
   "message-content": "نحن هنا لمساعدتك في كل خطوة على الطريق. ابق على اطلاع دائم بحالة طلبك وتتبعه أينما كان. كل ما عليك فعله هو إدخال رقم الطلب وعنوان البريد الإلكتروني للحصول على مزيد من التفاصيل.",
   "ORDER NO": "رقم الطلب",
-  "Delivered On": "تم التسليم",
+  "Delivered On ": "تم التسليم",
   "Delivery Address": "عنوان التسليم",
   "Customer Name": "اسم الزبون",
   "Address": "العنوان",
@@ -20,6 +20,10 @@
   "Click here to track another order": "اضغط هنا لتتبع طلب آخر",
   "Order Number is required":"رقم الطلب مطلوب",
   "Phone Number is required":"رقم الهاتف مطلوب",
-  "Order Confirmed":"تم تاكيد الطلب"
+  "Order Confirmed":"تم تاكيد الطلب",
+  "Order is Prepared": "تم تجهيز الطلب",
+  "Order is on its way": "الطلب في الطريق إليك",
+  "Order is Delivered": "تم تسليم الطلب",
+  "Expected Arrival":"وقت الوصول المتوقع"
 
 }

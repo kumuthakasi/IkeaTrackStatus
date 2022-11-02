@@ -1,37 +1,58 @@
 import React, { useState, useEffect } from "react";
 import Image from "../../assets/images/Logo.svg";
 import Button from "@ingka/button";
-import { useNavigate } from "react-router-dom";
-import API from "../../static/static.json";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Table, { TableBody, TableHeader } from "@ingka/table";
 import useLanguage from "../../hooks/useLanguage";
-import moment from "moment";
 
+const initialState = {
+  orderNumber: "",
+  orderStatus: "",
+  deliveryDate: "",
+  customername: "",
+  deliveryAddress: "",
+  shipmentAddress: "",
+  customerMobile: "",
+  customerEmail: "",
+  expectedDeliveryDate: "",
+  deliveryDateLabel: " ",
+  statusLabel: [],
+  lineitem: [],
+};
 export default function TrackStatus() {
-  const [data, setData] = useState(API.data);
+  const [data, setData] = useState(initialState);
   const [orderStatus, setOrderStatus] = useState(0);
-  const [tableData, setTableData] = useState(data.lineitem);
-  const [statusData, setStatusData] = useState(data.statusLabel);
+  const [tableData, setTableData] = useState(initialState.lineitem);
 
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { language } = useLanguage();
 
+  const location = useLocation();
+
   const onNavigate = () => {
     navigate("/orderTracking");
   };
 
+  const statusData = [
+    t(data.statusLabel[0]),
+    t(data.statusLabel[1]),
+    t(data.statusLabel[2]),
+    t(data.statusLabel[3]),
+  ];
+  console.log(data);
   useEffect(() => {
-    const result = API.data;
-    var index = statusData.indexOf(result.orderStatus);
+    const result = t(data.orderStatus);
+    var index = statusData.indexOf(result);
     setOrderStatus(index);
     document.documentElement.setAttribute("lang", language);
     document.documentElement.setAttribute(
       "dir",
       language === "ar" ? "rtl" : "ltr"
     );
-  }, [language]);
+    setData(location.state.result.data);
+    setTableData(data.lineitem);
+  }, [language, data]);
 
   return (
     <div className="steppers">
@@ -46,8 +67,8 @@ export default function TrackStatus() {
             <span> {data.orderNumber}</span>
           </h4>
           <p>
-            {t("Delivered On")}
-            <span> {moment(data.deliveryDate).format("MMMM DD YYYY")}</span>
+            {t(data.deliveryDateLabel)}
+            <span> {data.expectedDeliveryDate}</span>
           </p>
         </div>
         <div>
@@ -94,24 +115,24 @@ export default function TrackStatus() {
       <div className="third-section">
         <h4>{t("Order Details")}</h4>
         <div className="table">
-          <Table className={null} fullWidth>
-            <TableHeader>
+          <table class="table table-striped responsive trackingtable">
+            <thead>
               <tr>
                 <th>{t("Item Code")}</th>
                 <th>{t("Item Name")}</th>
                 <th>{t("Quantity")}</th>
                 <th>{t("Price")}</th>
               </tr>
-            </TableHeader>
-            <TableBody striped>
+            </thead>
+            <tbody class="table-wrap">
               {tableData && tableData.length != 0 ? (
                 tableData.map((value, index) => {
                   return (
                     <tr key={index}>
-                      <td>{value.item_code}</td>
-                      <td>{value.item_name}</td>
+                      <td>{value.itemNo}</td>
+                      <td>{value.description}</td>
                       <td>{value.quantity}</td>
-                      <td>{value.price}</td>
+                      <td>{value.lineAmount}</td>
                     </tr>
                   );
                 })
@@ -120,8 +141,8 @@ export default function TrackStatus() {
                   <td colSpan={12}>No Data Found</td>
                 </tr>
               )}
-            </TableBody>
-          </Table>
+            </tbody>
+          </table>
         </div>
       </div>
       <div style={{ textAlign: "center", paddingBottom: "10px" }}>

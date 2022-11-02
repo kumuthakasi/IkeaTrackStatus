@@ -7,7 +7,7 @@
   "Find an Order": "Trouver une commande",
   "message-content": "Nous sommes là pour vous aider à chaque étape du chemin. Restez informé de l'état de votre commande et suivez-la où qu'elle se trouve. Il vous suffit d'entrer votre numéro de commande et votre adresse e-mail pour obtenir plus de détails.",
   "ORDER NO": "N ° DE COMMANDE",
-  "Delivered On": "Remis le",
+  "Delivered On ": "Remis le",
   "Delivery Address": "Adresse de livraison",
   "Customer Name": "Nom du client",
   "Address": "Adresse",
@@ -20,5 +20,10 @@
   "Click here to track another order": "Cliquez ici pour suivre une autre commande",
   "Order Number is required":"Le numéro de commande est requis",
   "Phone Number is required":"Le numéro de téléphone est requis",
-  "Order Confirmed":"Commande confirmée"
+  "Order Confirmed":"Commande confirmée",
+  "Order is Prepared": "La commande est préparée",
+  "Order is on its way": "La commande est en route",
+  "Order is Delivered": "La commande est livrée",
+  "Expected Arrival":"Arrivée prévue"
+
 }
